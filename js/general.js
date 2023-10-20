@@ -22,12 +22,12 @@ const handleOnMove = e => {
   
   track.animate({
     transform: `translate(${nextPercentage}%, -50%)`
-  }, { duration: 1200, fill: "forwards" });
+  }, { duration: 2000, fill: "forwards" });
   
   for(const image of track.getElementsByClassName("image")) {
     image.animate({
       objectPosition: `${100 + nextPercentage}% center`
-    }, { duration: 1200, fill: "forwards" });
+    }, { duration: 2000, fill: "forwards" });
   }
 }
 
@@ -59,6 +59,8 @@ openModalButtons.forEach(button => {
 })
 
 overlay.addEventListener('click', () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
   const modals = document.querySelectorAll('.modal.active')
   modals.forEach(modal => {
     closeModal(modal)
