@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Daniel</title>
+        <title>D4</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -12,16 +12,15 @@
         <header>
             <nav class="navbar">
                 <a href="#" class="nav-branding">D4</a>
-
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <button data-modal-target="#modal" class="nav-bar-button" class="nav-link">Home</button>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <button data-modal-target="#modal" class="nav-bar-button" class="nav-link">About</button>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <button data-modal-target="#modal" class="nav-bar-button" class="nav-link">Contact</button>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -29,7 +28,16 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Home</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat minus ipsa sunt eveniet itaque autem dolor alias id, ratione, repellat eos cum at adipisci ducimus ut! Facilis sit laboriosam rerum, accusamus quibusdam quisquam reprehenderit doloribus veniam officiis inventore corrupti consequatur vero illum quidem, velit unde molestias reiciendis harum vel iusto, aperiam fuga sint iste? Assumenda sit corporis illo ex quis accusamus sed perferendis provident quos reprehenderit? Porro accusantium quia doloremque voluptates eos dolorem! Et, earum similique deserunt autem eius fuga.
+                    </div>
+                </div>
+                <div id="overlay"></div>
             </nav>
         </header>
         
