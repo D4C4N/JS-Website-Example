@@ -23,11 +23,13 @@ li {
 }
 
 a {
+    z-index: 3;
     color: white;
     text-decoration: none;
 }
 
 .navbar {
+    z-index: 3;
     min-height: 70px;
     display: flex;
     justify-content: space-between;
@@ -36,6 +38,7 @@ a {
 }
 
 .nav-menu {
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,10 +46,12 @@ a {
 }
 
 .nav-branding {
+    z-index: 3;
     font-size: 2rem;
 }
 
 .nav-link {
+    z-index: 3;
     transition: 0.7s ease;
 }
 
@@ -55,11 +60,13 @@ a {
 }
 
 .hamburger {
+    z-index: 3;
     display: none;
     cursor: pointer;
 }
 
 .bar {
+    z-index: 3;
     display: block;
     width: 25px;
     height: 3px;
@@ -90,7 +97,6 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: black;
         width: 100%;
         text-align: center;
         transition: 0.7s;
@@ -116,8 +122,8 @@ a {
     }
 
     .nav-menu.active {
-        right: 0;
-        background-color: rgb(41, 41, 41);
+        right: 0%;
+        
     }
 }
 
@@ -179,7 +185,7 @@ a {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
-    z-index: 2;
+    z-index: 4;
 }
 
 #overlay.active {
@@ -188,6 +194,7 @@ a {
 }
 
 #image-track {
+    z-index: 3;
     display: flex;
     gap: 4vmin;
     position: absolute;
@@ -203,3 +210,40 @@ a {
     object-fit: cover;
     object-position: 100% center;
 }
+
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  #blob {
+    z-index: 1;
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+  }
+  
+  #blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(12vmax);
+  }
