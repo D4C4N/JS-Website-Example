@@ -238,6 +238,7 @@ a {
 .modal-image {
     max-width: auto;
     max-height: 95vmin;
+    border-radius: 6px;
 }
 
 @keyframes rotate {
