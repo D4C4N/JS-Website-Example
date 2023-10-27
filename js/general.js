@@ -47,14 +47,28 @@ document.querySelectorAll(".nav-link").forEach(n => n.
   }))
 
 /* Modal */
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const openModalButton1 = document.querySelectorAll('[data-modal-target1]')
+const openModalButton2 = document.querySelectorAll('[data-modal-target2]')
+const openModalButton3 = document.querySelectorAll('[data-modal-target3]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
-openModalButtons.forEach(button => {
+openModalButton1.forEach(button => {
   button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
+    openModal(modal1)
+  })
+})
+openModalButton2.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal2)
+  })
+})
+openModalButton3.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal3)
   })
 })
 
@@ -86,7 +100,76 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
+/* Image Modals */
+const openModalImage1 = document.querySelectorAll('[data-modal-target-img1]')
+const openModalImage2 = document.querySelectorAll('[data-modal-target-img2]')
+const openModalImage3 = document.querySelectorAll('[data-modal-target-img3]')
+const openModalImage4 = document.querySelectorAll('[data-modal-target-img4]')
+const openModalImage5 = document.querySelectorAll('[data-modal-target-img5]')
+const openModalImage6 = document.querySelectorAll('[data-modal-target-img6]')
+const openModalImage7 = document.querySelectorAll('[data-modal-target-img7]')
+const openModalImage8 = document.querySelectorAll('[data-modal-target-img8]')
+
+openModalImage1.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(image1)
+  })
+})
+openModalImage2.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(image2)
+  })
+})
+openModalImage3.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(image3)
+  })
+})
+openModalImage4.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(image4)
+  })
+})
+openModalImage5.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(image5)
+  })
+})
+openModalImage6.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(image6)
+  })
+})
+openModalImage7.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(image7)
+  })
+})
+openModalImage8.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(image8)
+  })
+})
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active, .image-modal.active');
+  modals.forEach(modal => {
+    closeModal(modal);
+  });
+});
+
+/* Blob */
 const blob = document.getElementById("blob");
+
+const images = document.querySelectorAll('.image');
 
 window.onpointermove = event => { 
   const { clientX, clientY } = event;

@@ -201,7 +201,8 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(0%, -50%); 
-    user-select: none; 
+    user-select: none;
+    cursor: pointer;
 }
   
 #image-track > .image {
@@ -210,6 +211,37 @@ a {
     object-fit: cover;
     object-position: 100% center;
 }
+
+.image-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s ease-in-out;
+    border-radius: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1vrem;
+    max-height: 56vmin;
+    opacity: 0; /* Set the initial opacity to 0 */
+    pointer-events: none; /* Disable pointer events when not active */
+}
+
+.image-modal.active {
+    opacity: 1; /* Change the opacity to 1 when active */
+    pointer-events: auto; /* Enable pointer events when active */
+}
+
+.modal-image {
+    max-width: auto;
+    max-height: 95vmin;
+}
+
+
+
+
 
 @keyframes rotate {
     from {
@@ -235,7 +267,7 @@ a {
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
-    background: linear-gradient(to right, aquamarine, mediumpurple);
+    background: linear-gradient(to right, rgb(255, 185, 127), rgb(255, 113, 78));
     animation: rotate 20s infinite;
     opacity: 0.8;
   }

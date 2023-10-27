@@ -17,13 +17,13 @@
                 <a href="#" class="nav-branding">D4</a>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <button data-modal-target="#modal" class="nav-bar-button" class="nav-link">Home</button>
+                        <button data-modal-target1="#modal" class="nav-bar-button" class="nav-link">家</button>
                     </li>
                     <li class="nav-item">
-                        <button data-modal-target="#modal" class="nav-bar-button" class="nav-link">About</button>
+                        <button data-modal-target2="#modal" class="nav-bar-button" class="nav-link">About</button>
                     </li>
                     <li class="nav-item">
-                        <button data-modal-target="#modal" class="nav-bar-button" class="nav-link">Contact</button>
+                        <button data-modal-target3="#modal" class="nav-bar-button" class="nav-link">контакт</button>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -31,13 +31,31 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <div class="modal" id="modal">
+                <div class="modal" id="modal1">
                     <div class="modal-header">
-                        <div class="title">Home</div>
+                        <div class="title">家</div>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
                     <div class="modal-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat minus ipsa sunt eveniet itaque autem dolor alias id, ratione, repellat eos cum at adipisci ducimus ut! Facilis sit laboriosam rerum, accusamus quibusdam quisquam reprehenderit doloribus veniam officiis inventore corrupti consequatur vero illum quidem, velit unde molestias reiciendis harum vel iusto, aperiam fuga sint iste? Assumenda sit corporis illo ex quis accusamus sed perferendis provident quos reprehenderit? Porro accusantium quia doloremque voluptates eos dolorem! Et, earum similique deserunt autem eius fuga.
+                        顧客が非常に賢い場合、望ましい結果を達成できるでしょう。 彼らはより少ないものを求めているので、それは起こりますが、私たちが彼らをそれを手に入れるように導くと、別の方法での痛みが彼らを反発させるのは当然のことです。 面倒なことは楽にしましょう、誰かがその苦痛や役職の許しを批判するなら、腐敗した発明者は成功するでしょう、と私たちは非難しますが、実際、彼はこれらを拒否したり正当化したりするという困難をどこから望んでいますか？フライトを開きますか？ それは私たちが告発しているその体から取られるものでしょうか、しかしそれらは彼が批判している人たちを産むために用意されているのでしょうか。 さらに、告発者たちは苦痛と快楽で苦痛を感じているのです。 そして彼らなどは彼を逃亡中に置き去りにした。
+                    </div>
+                </div>
+                <div class="modal" id="modal2">
+                    <div class="modal-header">
+                        <div class="title">About</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        It is very important for the customer to pay attention to the adipiscing process. Which exercise should be repulsed. Rejecting the matter, no one rejects the truth from the present times accusers often because they want to do flexibility to the needs of the right pleasures, no one hates in. Does he seek pains, and the wiser of truth the most worthy of pleasures? He reproaches himself for the indulgence of some pleasures, to follow the elders who are most worthy of him, and those who are similar in body, to the training of the truth of life. The laborious least of the labors, any selection of the easy, will be less followed by the just, so let the pleasure often flee from those who praise them for nothing! Repulsion, resilience and the like.
+                    </div>
+                </div>
+                <div class="modal" id="modal3">
+                    <div class="modal-header">
+                        <div class="title">контакт</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Для клієнта дуже важливо звернути увагу на процес ожиріння. Яку вправу варто відбити. Відкидаючи це питання, ніхто не відкидає правду від теперішніх обвинувачів, часто тому, що вони хочуть зробити гнучкість до потреб правильних задоволень, ніхто не ненавидить в. Чи шукає він страждань, а мудріший від правди найгідніших насолод? Він дорікає собі за потурання деяким насолодам, за тим, щоб йти за старшими, які є найбільш гідними його, і за подібними тілом, щоб навчатися правді життя. За найменшою трудомісткістю, за будь-яким вибором легкого буде менше слідувати за справедливим, тож нехай насолода часто втікає від тих, хто хвалить їх задарма! Відштовхування, стійкість тощо.
                     </div>
                 </div>
                 <div id="overlay"></div>
@@ -45,14 +63,54 @@
         </header>
         
         <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <img class="image" src="images/image1.jpg" draggable="false"/>
-            <img class="image" src="images/image2.jpg" draggable="false"/>
-            <img class="image" src="images/image3.jpg" draggable="false"/>
-            <img class="image" src="images/image4.jpg" draggable="false"/>
-            <img class="image" src="images/image5.jpg" draggable="false"/>
-            <img class="image" src="images/image6.jpg" draggable="false"/>
-            <img class="image" src="images/image7.jpg" draggable="false"/>
-            <img class="image" src="images/image8.jpg" draggable="false"/>
+            <img data-modal-target-img1="#image1" class="image" src="images/image1.jpg" draggable="false"/>
+            <img data-modal-target-img2="#image2" class="image" src="images/image2.jpg" draggable="false"/>
+            <img data-modal-target-img3="#image3" class="image" src="images/image3.jpg" draggable="false"/>
+            <img data-modal-target-img4="#image4" class="image" src="images/image4.jpg" draggable="false"/>
+            <img data-modal-target-img5="#image5" class="image" src="images/image5.jpg" draggable="false"/>
+            <img data-modal-target-img6="#image6" class="image" src="images/image6.jpg" draggable="false"/>
+            <img data-modal-target-img7="#image7" class="image" src="images/image7.jpg" draggable="false"/>
+            <img data-modal-target-img8="#image8" class="image" src="images/image8.jpg" draggable="false"/>
+        </div>
+        <div class="image-modal" id="image1">
+            <div class="modal-body">
+                <img class="modal-image" src="images/image1.jpg"/>
+            </div>
+        </div>
+        <div class="image-modal" id="image2">
+            <div class="modal-body">
+                <img class="modal-image" src="images/image2.jpg"/>
+            </div>
+        </div>
+        <div class="image-modal" id="image3">
+            <div class="modal-body">
+                <img class="modal-image" src="images/image3.jpg"/>
+            </div>
+        </div>
+        <div class="image-modal" id="image4">
+            <div class="modal-body">
+                <img class="modal-image" src="images/image4.jpg"/>
+            </div>
+        </div>
+        <div class="image-modal" id="image5">
+            <div class="modal-body">
+                <img class="modal-image" src="images/image5.jpg"/>
+            </div>
+        </div>
+        <div class="image-modal" id="image6">
+            <div class="modal-body">
+                <img class="modal-image" src="images/image6.jpg"/>
+            </div>
+        </div>
+        <div class="image-modal" id="image7">
+            <div class="modal-body">
+                <img class="modal-image" src="images/image7.jpg"/>
+            </div>
+        </div>
+        <div class="image-modal" id="image8">
+            <div class="modal-body">
+                <img class="modal-image" src="images/image8.jpg"/>
+            </div>
         </div>
 
         <script type="module" src="js/general.js"></script>
